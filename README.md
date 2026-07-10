@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚬 Teller — Tobacco Countdown Tracker
 
-## Getting Started
+A colorful, single-page **Next.js** app to track your tobacco reduction journey. Cross off rolls as you use them — progress saves automatically in your browser. ✨
 
-First, run the development server:
+---
+
+## 📋 Program overview
+
+| Phase | Days | Roll budget |
+|-------|------|-------------|
+| 1️⃣    | 7    | 7 rolls     |
+| 2️⃣    | 4    | 4 rolls     |
+| 3️⃣    | 4    | 2 rolls     |
+
+**Total:** 15 days · 13 rolls max 🎯
+
+Each phase is a **total budget** — use your rolls anytime within that phase's day window.
+
+---
+
+## ✨ Features
+
+- ✅ **Cross off rolls** — tap to mark used, tap again to undo
+- 💾 **Auto-save** — progress stored in `localStorage` (survives refresh)
+- 🌈 **Colorful gradient UI** — animated background with glass-style cards
+- 📱 **Responsive** — works great on phone and desktop
+- 🔄 **Reset** — clear all progress with confirmation
+
+---
+
+## 🚀 Getting started
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser. 🌐
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🎮 How to use
 
-## Learn More
+1. **Tap a roll** 🚬 to mark it as used (crossed off)
+2. **Tap again** ↩️ to undo
+3. **Reset progress** 🗑️ clears all saved data (with confirmation)
 
-To learn more about Next.js, take a look at the following resources:
+Progress is saved under the key `teller-used-rolls` in your browser.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🏗️ Build for production
 
-## Deploy on Vercel
+```bash
+npm run build
+npm start
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📄 License
+
+MIT © [raimonvibe](./LICENSE)
+
+Made with 💜 by **raimonvibe**
