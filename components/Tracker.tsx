@@ -41,7 +41,7 @@ export function Tracker() {
   const currentPhaseIndex = getCurrentPhaseIndex(usedRollIds);
 
   return (
-    <div className="mx-auto flex w-full max-w-2xl flex-col gap-5 px-4 py-8 sm:gap-6 sm:px-6 sm:py-10">
+    <div className="mx-auto flex w-full max-w-3xl flex-col gap-5 px-4 py-8 sm:gap-6 sm:px-6 sm:py-10">
       <ProgressHeader usedCount={usedCount} currentPhaseIndex={currentPhaseIndex} />
 
       <div className="flex flex-col gap-5 sm:gap-6">
